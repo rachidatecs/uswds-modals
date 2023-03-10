@@ -1,0 +1,27 @@
+<div class="usa-overlay"></div>
+<header class="usa-header usa-header--basic">
+  <div class="usa-nav-container grid-container-widescreen">
+    <div class="usa-navbar">
+      <div class="usa-logo" id="-logo">
+        <a routerLink="/">
+            TestRepo
+        </a>
+      </div>
+      <button type="button" class="usa-menu-btn">Menu</button>
+    </div>
+    <nav aria-label="Primary navigation" class="usa-nav">
+      <button type="button" class="usa-nav__close">
+        <img src="/assets/uswds/img/usa-icons/close.svg" role="img" alt="Close" />
+      </button>
+      <ul class="usa-nav__primary usa-accordion">
+        <li class="usa-nav__primary-item">
+          <a routerLink="/" class="usa-nav-link" routerLinkActive="usa-current" [routerLinkActiveOptions]="{ exact: true }"><span class="text-base-darkest">One Modal</span></a>
+        </li>      
+        <li class="usa-nav__primary-item">
+          <a routerLink="/multiple" class="usa-nav-link" routerLinkActive="usa-current" [routerLinkActiveOptions]="{ exact: true }"><span class="text-base-darkest">Multiple Modals</span></a>
+        </li>   
+      </ul>
+    </nav>
+  </div>
+</header>
+

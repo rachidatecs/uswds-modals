@@ -1,0 +1,47 @@
+<a *ngIf="modalName!==null"
+    href="'#' + {{modalName}}"
+    [attr.aria-controls]="modalName"
+    data-open-modal
+    [ngClass]="triggerButtonClass"
+    #modalTrigger
+>
+    {{ triggerButtonText }}
+</a>
+<div
+    *ngIf="modalName!==null"
+    class="usa-modal"
+    attr.id={{modalName}}
+    attr.aria-labelledby={{modalName}}
+    attr.aria-describedby={{modalName}}
+>
+    <div class="usa-modal__content">
+    <div class="usa-modal__main">
+        <h2
+        class="usa-modal__heading"
+        >
+            {{ modalHeader }}
+        </h2>
+        <div class="usa-prose">
+            <ng-content></ng-content>
+        </div>
+    </div>
+    <button
+        type="button"
+        class="usa-button usa-modal__close"
+        aria-label="Close this window"
+        data-close-modal
+        #modalClose
+    >
+        <svg
+        class="usa-icon"
+        aria-hidden="true"
+        focusable="false"
+        role="img"
+        >
+        <use
+            xlink:href='/assets/uswds/img/sprite.svg#close'
+        ></use>
+        </svg>
+    </button>
+    </div>
+</div>
