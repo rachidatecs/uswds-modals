@@ -23,13 +23,13 @@ export class ModalComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  ngAfterViewInit() {
-    modal.on();
-  }
+  // ngAfterViewInit() {
+  //   modal.on();
+  // }
 
-  ngOnDestroy() {
-    modal.off();
-  }
+  // ngOnDestroy() {
+  //   modal.off();
+  // }
 
 
 }
