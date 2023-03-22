@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-//@ts-ignore
-import modal from "@uswds/uswds/js/usa-modal";
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,11 +11,4 @@ export class AppComponent implements OnInit {
   }
   title = '5062-modal-inits';
 
-  ngAfterViewInit() {
-    modal.on();
-  }
-
-  ngOnDestroy() {
-    modal.off();
-  }
 }
